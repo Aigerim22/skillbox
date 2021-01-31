@@ -1,0 +1,19 @@
+{
+  "name": "skillbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel serve src/index.html",
+    "build": "parcel build src/index.html --out-dir=dist --public-url ./",
+    "electron:serve": "electron serve.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/electron": "^1.6.10",
+    "electron": "^11.2.1",
+    "electron-packager": "^15.2.0",
+    "parcel": "^1.12.4"
+  }
+}
