@@ -75,7 +75,7 @@
   }
   
   .app,
-  .container {
+  .container, .cont {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,6 +94,27 @@
     opacity: 0;
     pointer-events: none;
   }
+  .cont{
+      position: absolute;
+      display: flex;
+      max-width: 666px;
+      width: 100%;
+      transition-timing-function: ease-in-out;
+      transition-duration: .33s;
+      transition-property: opacity transform;
+      transform: translateY(100%) scale(.7);
+      opacity: 0;
+      pointer-events: none;
+    
+  }
+  .cont.is-active {
+    transform: none;
+    opacity: 1;
+    pointer-events: all;
+  }
+  /* .container2{
+    display: none;
+  } */
   
   .container.is-active {
     transform: none;
